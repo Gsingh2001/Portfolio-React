@@ -15,7 +15,7 @@ function Projects() {
 
             <div className="text-container">
               <div className="image-container">
-                <a href="project.html">
+                <a href="https://organify-c0005.web.app/">
                   <img className="img-fluid" src="images/project-1.jpg" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
@@ -24,29 +24,29 @@ function Projects() {
 
             <div className="text-container">
               <div className="image-container">
-                <a href="project.html">
+                <a href="https://netflix-f6221.web.app/">
                   <img className="img-fluid" src="images/project-2.jpg" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
-              <p><strong>For:</strong> Carsrepo, <strong>Project:</strong> designed and developed a modern platform for purchasing second-hand cars online <a className="blue" href="project.html">details</a></p>
+             
             </div> {/* end of text-container */}
 
             <div className="text-container">
               <div className="image-container">
-                <a href="project.html">
+                <a href="https://to-do-fb966.web.app/">
                   <img className="img-fluid" src="images/project-3.jpg" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
-              <p><strong>For:</strong> Truevideo, <strong>Project:</strong> created a custom video editing and upload web app for this awesome team <a className="blue" href="project.html">details</a></p>
+             
             </div> {/* end of text-container */}
 
             <div className="text-container">
               <div className="image-container">
-                <a href="project.html">
-                  <img className="img-fluid" src="images/project-4.jpg" alt="alternative" />
+                <a href="/">
+                  <img className="img-fluid " src="images/project-4.jpg" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
-              <p><strong>For:</strong> Evolosim, <strong>Project:</strong> complete redesign of their corporate website and platform update for their online shop <a className="blue" href="project.html">details</a></p>
+             
             </div> {/* end of text-container */}
 
           </div> {/* end of col */}

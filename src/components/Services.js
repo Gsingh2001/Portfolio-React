@@ -1,42 +1,213 @@
-import React from 'react'
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-function Services() {
-    return (
-        <div id="services" className="basic-2">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <h2 className="h2-heading">Skills</h2>
-              <p className="p-heading">A highly skilled and motivated web developer with a passion for creating innovative and user-friendly
-websites. Proficient in HTML, CSS, React and JavaScript </p>
-            </div> {/* end of col */}
-          </div> {/* end of row */}
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="text-box">
-                <i className="far fa-gem"></i>
-                <h4>DESIGN</h4>
-                <p>Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth</p>
-              </div> {/* end of text-box */}
-            </div> {/* end of col */}
-            <div className="col-lg-4">
-              <div className="text-box">
-                <i className="fas fa-code"></i>
-                <h4>DEVELOPMENT</h4>
-                <p>I can code my own designs or even use the customer's design as a base. My focus is to generate clean code that's well-structured for reliability</p>
-              </div> {/* end of text-box */}
-            </div> {/* end of col */}
-            <div className="col-lg-4">
-              <div className="text-box">
-                <i className="fas fa-tv"></i>
-                <h4>BASIC SEO</h4>
-                <p>I can set up your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money</p>
-              </div> {/* end of text-box */}
-            </div> {/* end of col */}
-          </div> {/* end of row */}
-        </div> {/* end of container */}
-      </div> 
-    )
-}
 
-export default Services
+
+const Services = () => {
+
+  const owlOptions = {
+    items: 2, // Display one item at a time
+    autoHeight: true, // Auto height based on the content
+    autoplay: true,
+    autoWidth:true,
+    margin:10,
+    responsive: {
+      0: {
+        items: 2, // Display one item at a time on small screens
+      },
+      768: {
+        items: 4, // Display three items at a time on screens larger than 768px
+      },
+    },
+  };
+
+
+  return (
+
+    <div id="services" className="basic-2">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <h2 className="h2-heading">Skills</h2>
+            <p className="p-heading">A highly skilled and motivated web developer with a passion for creating innovative and user-friendly websites. Proficient in HTML, CSS, React, and JavaScript </p>
+          </div>
+        </div>
+
+
+
+        <OwlCarousel className="owl-theme" {...owlOptions} >
+          <div className="myCard">
+            <div className="innerCard ">
+              <div className="frontSide frontSide-JS ">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p >JavaScript</p>
+                <p className='text-owl'>JavaScript: Essential for web development, powers interactivity on sites, versatile for front-end and back-end, foundational for modern web apps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-HTML">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">HTML</p>
+                <p>HTML is the fundamental language for building web pages. HTML provides the basic framework for web documents. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-CSS">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">CSS</p>
+                <p>CSS, or Cascading Style Sheets, is a language used for styling web pages. It controls the layout and appearance of HTML elements</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-NODE">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">NodeJS</p>
+                <p> Node.js is a server-side JavaScript runtime that allows developers to build scalable and high-performance applications. It utilizes an event-driven, non-blocking I/O model, making it efficient for handling concurrent requests. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-REACT">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">ReactJS</p>
+                <p>React, is a JavaScript library for building user interfaces. Developed by Facebook, it enables the creation of interactive and dynamic web applications.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-SHOPIFY">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">SHOPIFY</p>
+                <p>Shopify is an e-commerce platform that allows businesses to create online stores. Known for its user-friendly interface, Shopify simplifies the process of setting up and managing an online business. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-FIRE">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">FireBase</p>
+                <p>Firebase is a comprehensive mobile and web development platform by Google. It provides a suite of services, including real-time databases, authentication, hosting, and cloud functions. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-JSON">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">JSON</p>
+                <p>JSON (JavaScript Object Notation) is a lightweight data interchange format. It is easy for humans to read and write and easy for machines to parse and generate. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-EXP">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Express</p>
+                <p>Express is a minimal and flexible Node.js web application framework. It simplifies the creation of robust web applications and APIs by providing a set of features for routing, middleware, and HTTP utility methods. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-DJ">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Django</p>
+                <p>Django is a high-level Python web framework known for its simplicity and flexibility. It follows the "don't repeat yourself" (DRY) principle, making it efficient for building web applications. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-REDUX">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Redux</p>
+                <p>Redux is a state management library for JavaScript applications, commonly used with React. It centralizes the state of an application, making it predictable and easier to manage. </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-WORD">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Wordpress</p>
+                <p>JavaScript: Essential for web development, powers interactivity on sites, versatile for front-end and back-end, foundational for modern web apps.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </OwlCarousel>
+      </div>
+
+    </div>
+
+  );
+};
+
+export default Services;

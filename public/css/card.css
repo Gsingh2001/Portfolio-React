@@ -1,166 +1,25 @@
 @media (min-width: 768px) {
 
-.myCard {
-  background-color: transparent;
-  width: 250px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-}
-
-.innerCard {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-}
-
-.myCard:hover .innerCard {
-  transform: rotateY(180deg);
-}
-
-.frontSide,
-.backSide {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
-  color: white;
-  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
-  font-weight: 700;
-}
-
-.frontSide-JS,
-.frontSide-JS::before {
-  background-image: url("../logo/javascript.png");
-}
-
-.frontSide-HTML,
-.frontSide-HTML::before {
-  background-image: url("../logo/html.png");
-}
-
-.frontSide-CSS,
-.frontSide-CSS::before {
-  background-image: url("../logo/css.png");
-}
-
-.frontSide-NODE,
-.frontSide-NODE::before {
-  background-image: url("../logo/node.png");
-}
-
-.frontSide-REACT,
-.frontSide-REACT::before {
-  background-image: url("../logo/reactjs.png");
-}
-
-.frontSide-SHOPIFY,
-.frontSide-SHOPIFY::before {
-  background-image: url("../logo/shopify.jpg");
-}
-
-.frontSide-FIRE,
-.frontSide-FIRE::before {
-  background-image: url("../logo/firebase.png");
-}
-
-.frontSide-JSON,
-.frontSide-JSON::before {
-  background-image: url("../logo/JSON.jpeg");
-}
-
-.frontSide-EXP,
-.frontSide-EXP {
-  background-image: url("../logo/exp.jpg");
-}
-
-.frontSide-DJ,
-.frontSide-DJ {
-  background-image: url("../logo/django.jpg");
-}
-
-.frontSide-REDUX,
-.frontSide-REDUX {
-  background-image: url("../logo/redux.png");
-}
-
-.frontSide-WORD,
-.frontSide-WORD {
-  background-image: url("../logo/WordPress.png");
-}
-
-.backSide,
-.backSide::before {
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-}
-
-.backSide {
-  transform: rotateY(180deg);
-}
-
-.frontSide::before,
-.backSide::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: '';
-  width: 110%;
-  height: 110%;
-  position: absolute;
-  z-index: -1;
-  border-radius: 1em;
-  filter: blur(20px);
-  animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0.3;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.3;
-  }
-}
-}
-@media  (max-width: 768px) {
-  .backSide{
-    visibility: hidden;
-  }
   .myCard {
     background-color: transparent;
-    width: 125px;
-    height: 150px;
+    width: 250px;
+    height: 300px;
     perspective: 1000px;
   }
+
   .title {
     font-size: 1.5em;
     font-weight: 900;
+    color: #ffffff;
     text-align: center;
     margin: 0;
   }
-  
+
+  .text {
+    color: #ffffff;
+
+  }
+
   .innerCard {
     position: relative;
     width: 100%;
@@ -170,85 +29,543 @@
     transform-style: preserve-3d;
     cursor: pointer;
   }
- 
-.frontSide-JS{
-  background-image: url("../logo1/javascript.png");
+
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    border-radius: 1rem;
+    color: white;
+
+    font-weight: 700;
+  }
+
+  .frontSide-JS,
+  .frontSide-JS::before {
+    background-image: url("../logo/javascript.png");
+  }
+
+  .frontSide-HTML,
+  .frontSide-HTML::before {
+    background-image: url("../logo/html.png");
+  }
+
+  .frontSide-CSS,
+  .frontSide-CSS::before {
+    background-image: url("../logo/css.png");
+  }
+
+  .frontSide-NODE,
+  .frontSide-NODE::before {
+    background-image: url("../logo/node.png");
+  }
+
+  .frontSide-REACT,
+  .frontSide-REACT::before {
+    background-image: url("../logo/reactjs.png");
+  }
+
+  .frontSide-SHOPIFY,
+  .frontSide-SHOPIFY::before {
+    background-image: url("../logo/shopify.jpg");
+  }
+
+  .frontSide-FIRE,
+  .frontSide-FIRE::before {
+    background-image: url("../logo/firebase.png");
+  }
+
+  .frontSide-JSON,
+  .frontSide-JSON::before {
+    background-image: url("../logo/JSON.jpeg");
+  }
+
+  .frontSide-EXP,
+  .frontSide-EXP {
+    background-image: url("../logo/exp.jpg");
+  }
+
+  .frontSide-DJ,
+  .frontSide-DJ {
+    background-image: url("../logo/django.jpg");
+  }
+
+  .frontSide-REDUX,
+  .frontSide-REDUX {
+    background-image: url("../logo/redux.png");
+  }
+
+  .frontSide-WORD,
+  .frontSide-WORD {
+    background-image: url("../logo/WordPress.png");
+  }
+
+  .backSide,
+  .backSide::before {
+    background-image: linear-gradient(160deg, #918f98 0%, #484454 100%);
+  }
+
+  .backSide {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.3;
+    }
+  }
 }
 
-.frontSide,
-.backSide {
-  position: absolute;
+@media (max-width: 768px) {
+  .backSide {
+    visibility: hidden;
+  }
+
+  .myCard {
+    background-color: transparent;
+    width: 125px;
+    height: 150px;
+    perspective: 1000px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+  }
+
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .frontSide-JS {
+    background-image: url("../logo1/javascript.png");
+  }
+
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 0;
+  }
+
+
+  .frontSide-HTML,
+  .frontSide-HTML::before {
+    background-image: url("../logo1/html.png");
+  }
+
+  .frontSide-CSS,
+  .frontSide-CSS::before {
+    background-image: url("../logo1/css.png");
+  }
+
+  .frontSide-NODE,
+  .frontSide-NODE::before {
+    background-image: url("../logo1/node.png");
+  }
+
+  .frontSide-REACT,
+  .frontSide-REACT::before {
+    background-image: url("../logo1/reactjs.png");
+  }
+
+  .frontSide-SHOPIFY,
+  .frontSide-SHOPIFY::before {
+    background-image: url("../logo1/shopify.jpg");
+  }
+
+  .frontSide-FIRE,
+  .frontSide-FIRE::before {
+    background-image: url("../logo1/firebase.png");
+  }
+
+  .frontSide-JSON,
+  .frontSide-JSON::before {
+    background-image: url("../logo1/JSON.jpeg");
+  }
+
+  .frontSide-EXP,
+  .frontSide-EXP {
+    background-image: url("../logo1/exp.jpg");
+  }
+
+  .frontSide-DJ,
+  .frontSide-DJ {
+    background-image: url("../logo1/django.jpg");
+  }
+
+  .frontSide-REDUX,
+  .frontSide-REDUX {
+    background-image: url("../logo1/redux.png");
+  }
+
+  .frontSide-WORD,
+  .frontSide-WORD {
+    background-image: url("../logo1/WordPress.png");
+  }
+
+
+
+}
+
+
+/* Initial form state */
+.form {
+  --col1: #fff;
+  --col2: #252325;
+  --col3: rgba(232, 213, 196, 0.9);
+  --col4: #ffffff;
+  --col5: #683363;
+  --sh: rgba(80, 80, 80, 0.35);
+  --rad: 4px;
+  --radBig: 10px;
+  border: #171717;
+  border-radius: 2px;
+  background-color: var(--col3);
+  outline: 3px solid var(--col4);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
+  gap: 1.5em 1em;
+  padding: 1em;
+  position: relative;
+  max-width: 75%;
+  max-height: 90px;
+  transition: background .3s ease-out, max-height .3s ease-out;
+  overflow: hidden;
+}
+
+.form::before {
+  content: 'Want to contact me?';
+  color: var(--col2);
+  border: black ;
+  border-radius: 2px;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: grid;
+  width: calc(100% - 2em);
+  height: 60%;
+  position: absolute;
+  place-items: center;
+  z-index: 99999;
+}
+
+.form::after {
+  content: '';
+  backdrop-filter: blur(6px) grayscale(100%);
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .5) 70%, rgba(255, 255, 255, 0.3) 90%);
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  position: absolute;
+  z-index: 999;
+}
+
+.form::after,
+.form::before {
+
+  pointer-events: none;
+  transition: all .5s ease-out;
+}
+
+/* Form hover and focus */
+.form:hover,
+.form:focus-within {
+  max-width: 100%;
+  max-height: 460px;
+}
+
+.form:focus-within {
+  overflow: initial;
+}
+
+.form:hover::before,
+.form:hover::after {
+  opacity: 0;
+}
+
+.form:hover::after {
+  backdrop-filter: blur(0) grayscale(0%);
+}
+
+.form header {
+  color: var(--col1);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Labels and inputs UI */
+:is(.form) label span,
+label input {
+  flex: 1 100%;
+  transition: all .3s ease-out;
+}
+
+:is(.form) label span,
+label textarea {
+  flex: 1 100%;
+  transition: all .3s ease-out;
+}
+
+:is(.form) input {
+  appearance: none;
+  border: 0;
+  padding: .75em;
+
+  transition: all .3s ease-out;
+}
+
+:is(.form) textarea {
+  appearance: none;
+  border: 0;
+  padding: .75em;
+
+  transition: all .3s ease-out;
+}
+
+.form label {
+  display: flex;
+  flex-flow: row wrap;
+  color: var(--col4);
+  gap: .5em;
+}
+
+.form input {
+  box-shadow: inset 3px 3px 1px var(--sh);
+}
+
+.form textarea {
+  box-shadow: inset 3px 3px 1px var(--sh);
+}
+
+
+
+.sm {
+  justify-content: space-around;
+}
+
+.sm span {
+  text-align: center;
+}
+
+
+/* Form and UI valid and invalid states */
+.form input:focus {
+  outline: 3px solid var(--col3);
+  outline-offset: 1px;
+}
+
+.form input:invalid:not(:focus) {
+  background-color: var(--col3);
+  outline: 3px solid var(--col4);
+  outline-offset: 1px;
+}
+
+.form input:valid:not(:focus) {
+  outline: 3px solid var(--col1);
+  outline-offset: 1px;
+}
+
+.form textarea:focus {
+  outline: 3px solid var(--col3);
+  outline-offset: 1px;
+}
+
+.form textarea:invalid:not(:focus) {
+  background-color: var(--col3);
+  outline: 3px solid var(--col4);
+  outline-offset: 1px;
+}
+
+.form textarea:valid:not(:focus) {
+  outline: 3px solid var(--col1);
+  outline-offset: 1px;
+}
+
+.form .message {
+  display: block;
+  opacity: 0;
+  font-size: .75em;
+  font-weight: 400;
+  transition: all .3s ease-out;
+  margin: -1rem 0 0;
+}
+
+.form:has(:invalid) .message {
+  opacity: 1;
+  margin: .25rem 0 0 0;
+}
+
+label:has(input:invalid) {
+  color: var(--col3);
+  opacity: .8;
+}
+
+label:has(input:valid) {
+  opacity: 1;
+}
+
+label:has(textarea:invalid) {
+  color: var(--col3);
+  opacity: .8;
+}
+
+label:has(textarea:valid) {
+  opacity: 1;
+}
+
+
+
+.form:hover:invalid {
+  transition: all .3s ease-out;
+  background-color: var(--col5);
+}
+
+.form:hover:valid {
+  transition: all .3s ease-out;
+  background-color: var(--col1);
+}
+
+.form:hover:valid * {
+  color: var(--col2);
+}
+
+.form:hover:valid input {
+  outline: 3px solid var(--col2);
+}
+
+.form:hover:valid textarea {
+  outline: 3px solid var(--col2);
+}
+
+/* Submit block */
+.form .submitCard {
+  display: flex;
+  justify-content: center;
+  background-color: var(--col2);
+  border-radius: 0 0 var(--rad) var(--rad);
+  bottom: 0;
+  padding: .5em;
+  opacity: 1;
+  max-height: 0;
+
+  max-height: 50px;
+  opacity: 1;
+  transition: opacity 1s ease-out .5s, translate 1.3s ease-out;
+  transform: translate(0, 100%);
+
+
+  width: calc(100% - 2em);
+
+
+}
+
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: white;
-  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
-  font-weight: 0;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-
-.frontSide-HTML,
-.frontSide-HTML::before {
-  background-image: url("../logo1/html.png");
+button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #0c66ed;
+  border-radius: 50%;
+  transition: .6s ease;
 }
 
-.frontSide-CSS,
-.frontSide-CSS::before {
-  background-image: url("../logo1/css.png");
+button span:nth-child(6) {
+  position: relative;
 }
 
-.frontSide-NODE,
-.frontSide-NODE::before {
-  background-image: url("../logo1/node.png");
+button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
 }
 
-.frontSide-REACT,
-.frontSide-REACT::before {
-  background-image: url("../logo1/reactjs.png");
+button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
 }
 
-.frontSide-SHOPIFY,
-.frontSide-SHOPIFY::before {
-  background-image: url("../logo1/shopify.jpg");
+button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
 }
 
-.frontSide-FIRE,
-.frontSide-FIRE::before {
-  background-image: url("../logo1/firebase.png");
+button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
 }
 
-.frontSide-JSON,
-.frontSide-JSON::before {
-  background-image: url("../logo1/JSON.jpeg");
+button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
 }
 
-.frontSide-EXP,
-.frontSide-EXP {
-  background-image: url("../logo1/exp.jpg");
-}
-
-.frontSide-DJ,
-.frontSide-DJ {
-  background-image: url("../logo1/django.jpg");
-}
-
-.frontSide-REDUX,
-.frontSide-REDUX {
-  background-image: url("../logo1/redux.png");
-}
-
-.frontSide-WORD,
-.frontSide-WORD {
-  background-image: url("../logo1/WordPress.png");
-}
-
-
-
+button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
 }

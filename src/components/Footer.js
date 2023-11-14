@@ -7,36 +7,22 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="social-container">
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x"></i>
-                  <i className="fab fa-facebook-f fa-stack-1x"></i>
+              <span className="fa-stack ">
+                <a className="nav-social" href="https://instagram.com/gurman_preetsingh/">
+                  <i className="fa-brands fa-square-instagram"></i>
+                </a>
+              </span>
+              <span className="fa-stack ">
+                <a className="nav-social" href="https://github.com/Gsingh2001#your-link/">
+                  <i className="fa-brands fa-square-github"></i>
                 </a>
               </span>
               <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x"></i>
-                  <i className="fab fa-twitter fa-stack-1x"></i>
+                <a className="nav-social" href="https://www.linkedin.com/in/gsingh07/">
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
               </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x"></i>
-                  <i className="fab fa-pinterest-p fa-stack-1x"></i>
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x"></i>
-                  <i className="fab fa-instagram fa-stack-1x"></i>
-                </a>
-              </span>
-              <span className="fa-stack">
-                <a href="#your-link">
-                  <i className="fas fa-circle fa-stack-2x"></i>
-                  <i className="fab fa-youtube fa-stack-1x"></i>
-                </a>
-              </span>
+
             </div>
             {/* end of social-container */}
           </div>

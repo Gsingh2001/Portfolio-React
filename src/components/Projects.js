@@ -19,7 +19,7 @@ function Projects() {
                   <img className="img-fluid" src="images/project-1.jpg" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
-              <p><strong>For:</strong> Jumbotron, <strong>Project:</strong> web design for their corporate websites and landing pages for marketing campaigns <a className="blue" href="project.html">details</a></p>
+             
             </div> {/* end of text-container */}
 
             <div className="text-container">
@@ -43,7 +43,7 @@ function Projects() {
             <div className="text-container">
               <div className="image-container">
                 <a href="/">
-                  <img className="img-fluid " src="images/project-4.jpg" alt="alternative" />
+                  <img className="img-fluid " src="images/project-4.png" alt="alternative" />
                 </a>
               </div> {/* end of image-container */}
              

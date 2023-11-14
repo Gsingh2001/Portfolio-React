@@ -24,36 +24,32 @@ function Nav() {
                         <li className="nav-item">
                             <a className="nav-link page-scroll" href="#about">About</a>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Privacy Policy</a>
-                            <div className="dropdown-menu" aria-labelledby="dropdown01">
-                                
-                                <a className="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                            </div>
-                        </li>
+
                         <li className="nav-item">
                             <a className="nav-link page-scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
+
                     <span className="nav-item social-icons">
                         <span className="fa-stack ">
                             <a className="nav-social" href="https://instagram.com/gurman_preetsingh/">
-                            <i className="fa-brands fa-square-instagram"></i>
+                                <i className="fa-brands fa-square-instagram"></i>
                             </a>
                         </span>
                         <span className="fa-stack ">
                             <a className="nav-social" href="https://github.com/Gsingh2001#your-link/">
-                            <i className="fa-brands fa-square-github"></i>
+                                <i className="fa-brands fa-square-github"></i>
                             </a>
                         </span>
                         <span className="fa-stack">
                             <a className="nav-social" href="https://www.linkedin.com/in/gsingh07/">
-                            <i className="fa-brands fa-linkedin"></i>
+                                <i className="fa-brands fa-linkedin"></i>
                             </a>
                         </span>
+
                     </span>
+                    <a class="btn btn-secondary" href="../images/Resume.pdf" role="button" download>Download Resume</a>
+
                 </div>
             </div>
         </nav>

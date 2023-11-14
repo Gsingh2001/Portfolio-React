@@ -1,0 +1,307 @@
+/* Initial form state */
+.form {
+    --col1: #fff;
+    --col2: #252325;
+    --col3: rgba(232, 213, 196, 0.9);
+    --col4: #ffffff;
+    --col5: #683363;
+    --sh: rgba(80, 80, 80, 0.35);
+    --rad: 4px;
+    --radBig: 10px;
+    border-radius: 0 0 var(--radBig) var(--radBig);
+    box-shadow: 0 0 20px var(--sh);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em 1em;
+    padding: 1em;
+    position: relative;
+    max-width: 75%;
+    max-height: 90px;
+    transition: background .3s ease-out, max-height .3s ease-out;
+    overflow: hidden;
+  }
+  
+  .form::before {
+    content: 'Want to contact me?';
+    text-align: center; 
+  
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    color: var(--col2);
+    font-size: 1.2em;
+    font-weight: 700;
+    display: grid;
+    width: calc(100% - 2em);
+    height: 60%;
+    position: absolute;
+    place-items: center;
+    z-index: 99999;
+  }
+  
+  .form::after {
+    content: '';
+    backdrop-filter: blur(6px) grayscale(100%);
+    background: linear-gradient(-180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .5) 70%, rgba(255, 255, 255, 0.3) 90%);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    z-index: 999;
+  }
+  
+  .form::after,
+  .form::before {
+  
+    pointer-events: none;
+    transition: all .5s ease-out;
+  }
+  
+  /* Form hover and focus */
+  .form:hover,
+  .form:focus-within {
+    max-width: 100%;
+    max-height: 460px;
+  }
+  
+  .form:focus-within {
+    overflow: initial;
+  }
+  
+  .form:hover::before,
+  .form:hover::after {
+    opacity: 0;
+  }
+  
+  .form:hover::after {
+    backdrop-filter: blur(0) grayscale(0%);
+  }
+  
+  .form header {
+    color: var(--col1);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Labels and inputs UI */
+  :is(.form) label span,
+  label input {
+    flex: 1 100%;
+    transition: all .3s ease-out;
+  }
+  
+  :is(.form) label span,
+  label textarea {
+    flex: 1 100%;
+    transition: all .3s ease-out;
+  }
+  
+  :is(.form) input {
+    appearance: none;
+    border: 0;
+    padding: .75em;
+  
+    transition: all .3s ease-out;
+  }
+  
+  :is(.form) textarea {
+    appearance: none;
+    border: 0;
+    padding: .75em;
+  
+    transition: all .3s ease-out;
+  }
+  
+  .form label {
+    display: flex;
+    flex-flow: row wrap;
+    color: var(--col4);
+    gap: .5em;
+  }
+  
+  .form input {
+    box-shadow: inset 3px 3px 1px var(--sh);
+  }
+  
+  .form textarea {
+    box-shadow: inset 3px 3px 1px var(--sh);
+  }
+  
+  
+  
+  .sm {
+    justify-content: space-around;
+  }
+  
+  .sm span {
+    text-align: center;
+  }
+  
+  
+  /* Form and UI valid and invalid states */
+  .form input:focus {
+    outline: 3px solid var(--col3);
+    outline-offset: 1px;
+  }
+  
+  .form input:invalid:not(:focus) {
+    background-color: var(--col3);
+    outline: 3px solid var(--col4);
+    outline-offset: 1px;
+  }
+  
+  .form input:valid:not(:focus) {
+    outline: 3px solid var(--col1);
+    outline-offset: 1px;
+  }
+  
+  .form textarea:focus {
+    outline: 3px solid var(--col3);
+    outline-offset: 1px;
+  }
+  
+  .form textarea:invalid:not(:focus) {
+    background-color: var(--col3);
+    outline: 3px solid var(--col4);
+    outline-offset: 1px;
+  }
+  
+  .form textarea:valid:not(:focus) {
+    outline: 3px solid var(--col1);
+    outline-offset: 1px;
+  }
+  
+  .form .message {
+    display: block;
+    opacity: 0;
+    font-size: .75em;
+    font-weight: 400;
+    transition: all .3s ease-out;
+    margin: -1rem 0 0;
+  }
+  
+  .form:has(:invalid) .message {
+    opacity: 1;
+    margin: .25rem 0 0 0;
+  }
+  
+  label:has(input:invalid) {
+    color: var(--col3);
+    opacity: .8;
+  }
+  
+  label:has(input:valid) {
+    opacity: 1;
+  }
+  
+  label:has(textarea:invalid) {
+    color: var(--col3);
+    opacity: .8;
+  }
+  
+  label:has(textarea:valid) {
+    opacity: 1;
+  }
+  
+  
+  
+  .form:hover:invalid {
+    transition: all .3s ease-out;
+    background-color: var(--col5);
+  }
+  
+  .form:hover:valid {
+    transition: all .3s ease-out;
+    background-color: var(--col1);
+  }
+  
+  .form:hover:valid * {
+    color: var(--col2);
+  }
+  
+  .form:hover:valid input {
+    outline: 3px solid var(--col2);
+  }
+  
+  .form:hover:valid textarea {
+    outline: 3px solid var(--col2);
+  }
+  
+  /* Submit block */
+  .form .submitCard {
+    display: flex;
+    justify-content: center;
+    background-color: var(--col2);
+    border-radius: 0 0 var(--rad) var(--rad);
+    bottom: 0;
+    padding: .5em;
+    opacity: 1;
+    max-height: 0;
+  
+    max-height: 50px;
+    opacity: 1;
+    transition: opacity 1s ease-out .5s, translate 1.3s ease-out;
+    transform: translate(0, 100%);
+  
+  
+    width: calc(100% - 2em);
+  
+  
+  }
+  
+  
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  button span:nth-child(6) {
+    position: relative;
+  }
+  
+  button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+  

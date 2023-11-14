@@ -111,6 +111,35 @@
   .frontSide-WORD {
     background-image: url("../logo/WordPress.png");
   }
+  .frontSide-BT,
+  .frontSide-BT {
+    background-image: url("../logo/bootstrap.png");
+  }
+  .frontSide-TMDB,
+  .frontSide-TMDB {
+    background-image: url("../logo/tmdb.jpg");
+  }
+  .frontSide-Tail,
+  .frontSide-Tail {
+    background-image: url("../logo/tailwind.png");
+  }
+  .frontSide-SASS,
+  .frontSide-SASS {
+    background-image: url("../logo/sass.png");
+  }
+  .frontSide-OWL,
+  .frontSide-OWL {
+    background-image: url("../logo1/owl.png");
+  }
+  .frontSide-Jquery,
+  .frontSide-Jquery {
+    background-image: url("../logo1/jquery.jpg");
+  }
+  .frontSide-FA,
+  .frontSide-FA {
+    background-image: url("../logo1/Font.jpg");
+  }
+
 
   .backSide,
   .backSide::before {
@@ -257,7 +286,34 @@
   .frontSide-WORD {
     background-image: url("../logo1/WordPress.png");
   }
-
+  .frontSide-BT,
+  .frontSide-BT {
+    background-image: url("../logo1/bootstrap.png");
+  }
+  .frontSide-TMDB,
+  .frontSide-TMDB {
+    background-image: url("../logo1/tmdb.jpg");
+  }
+  .frontSide-Tail,
+  .frontSide-Tail {
+    background-image: url("../logo1/tailwind.png");
+  }
+  .frontSide-SASS,
+  .frontSide-SASS {
+    background-image: url("../logo1/sass.png");
+  }
+  .frontSide-OWL,
+  .frontSide-OWL {
+    background-image: url("../logo1/owl.png");
+  }
+  .frontSide-Jquery,
+  .frontSide-Jquery {
+    background-image: url("../logo1/jquery.jpg");
+  }
+  .frontSide-FA,
+  .frontSide-FA {
+    background-image: url("../logo1/Font.jpg");
+  }
 
 
 }
@@ -273,10 +329,8 @@
   --sh: rgba(80, 80, 80, 0.35);
   --rad: 4px;
   --radBig: 10px;
-  border: #171717;
-  border-radius: 2px;
-  background-color: var(--col3);
-  outline: 3px solid var(--col4);
+  border-radius: 0 0 var(--radBig) var(--radBig);
+  box-shadow: 0 0 20px var(--sh);
   display: flex;
   flex-direction: column;
   gap: 1.5em 1em;
@@ -290,9 +344,11 @@
 
 .form::before {
   content: 'Want to contact me?';
+  text-align: center; 
+
+  justify-content: center; /* Center horizontally */
+  align-items: center;
   color: var(--col2);
-  border: black ;
-  border-radius: 2px;
   font-size: 1.2em;
   font-weight: 700;
   display: grid;
@@ -568,4 +624,55 @@ button span:nth-child(5) {
 button:hover span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
+}
+
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.Project-Heading{
+  font-size: 2rem;
+  
+  color: #ffffff;
+}
+
+.project-title{
+  font-size: 2rem;
+  color: #171717;
+  text-align: center;
 }

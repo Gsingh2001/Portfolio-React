@@ -6,7 +6,7 @@ function Projects() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <h2 className="h2-heading">Delivered projects</h2>
+            <h2 className="h2-heading project-title">Delivered projects</h2>
             <p className="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
           </div> {/* end of col */}
         </div> {/* end of row */}

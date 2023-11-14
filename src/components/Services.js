@@ -11,8 +11,8 @@ const Services = () => {
     items: 2, // Display one item at a time
     autoHeight: true, // Auto height based on the content
     autoplay: true,
-    autoWidth:true,
-    margin:10,
+    autoWidth: true,
+    margin: 10,
     responsive: {
       0: {
         items: 2, // Display one item at a time on small screens
@@ -30,7 +30,7 @@ const Services = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <h2 className="h2-heading">Skills</h2>
+            <h2 className="h2-heading project-title">Skills</h2>
             <p className="p-heading">A highly skilled and motivated web developer with a passion for creating innovative and user-friendly websites. Proficient in HTML, CSS, React, and JavaScript </p>
           </div>
         </div>
@@ -199,6 +199,89 @@ const Services = () => {
             </div>
           </div>
 
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-BT">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Bootstrap</p>
+                <p className="text">Bootstrap is a popular open-source front-end framework that simplifies and accelerates the process of building responsive and mobile-first web applications.  </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-TMDB">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">TMDB</p>
+                <p className="text">TMDB, short for "The Movie Database," is an online database and community-driven platform that provides comprehensive information about movies, TV shows, and celebrities. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-OWL">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Owl Carousel</p>
+                <p className="text">Owl Carousel is a feature-rich and responsive jQuery plugin that simplifies the creation of interactive and customizable carousels (sliders) on websites.  </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-Jquery">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">JQuery</p>
+                <p className="text">jQuery is a fast, lightweight, and feature-rich JavaScript library designed to simplify the process of client-side scripting in web development.  </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-FA">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">Font Awesome</p>
+                <p className="text">Font Awesome is a popular icon library that provides a comprehensive collection of scalable vector icons.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="myCard">
+            <div className="innerCard">
+              <div className="frontSide frontSide-SASS">
+                <p className="title"></p>
+                <p></p>
+              </div>
+              <div className="backSide">
+                <p className="title">SASS </p>
+                <p className="text">Sass (Syntactically Awesome Stylesheets) is a powerful and widely-used CSS preprocessor that extends the capabilities of traditional CSS.</p>
+              </div>
+            </div>
+          </div>
 
 
 

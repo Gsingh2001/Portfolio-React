@@ -1,32 +1,48 @@
-import React from 'react'
+import React from 'react';
 
-function Form() {
-    return (
-        <form>
-            <fieldset disabled>
-                <legend>Disabled fieldset example</legend>
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Disabled input</label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" />
-                </div>
-                <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                    <select id="disabledSelect" class="form-select">
-                        <option>Disabled select</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled />
-                            <label class="form-check-label" for="disabledFieldsetCheck">
-                                Can't check this
-                            </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-        </form>
-    )
-}
+const Form = () => {
 
-export default Form
+
+  return (
+    <div id="contact" className="footer bg-gray">
+      <div className="container">
+
+        <div className="row">
+          <form className="form ">
+            <header>
+              Contact Form
+              <span className="message">Fill the form to continue.</span>
+            </header>
+            <label>
+              <span>Name</span>
+              <input placeholder="Type your name" className="input" type="text" required="" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input placeholder="Type your Email adress" className="input" type="text" required="" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea placeholder="Type your Message " className="input " type="text" required="" rows="3" />
+            </label>
+
+            <button>
+              <span class="circle1"></span>
+              <span class="circle2"></span>
+              <span class="circle3"></span>
+              <span class="circle4"></span>
+              <span class="circle5"></span>
+              <span class="text">Submit</span>
+            </button>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  );
+};
+
+export default Form;

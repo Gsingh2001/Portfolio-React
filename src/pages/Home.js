@@ -4,20 +4,19 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Services from '../components/Services'
 import Projects from '../components/Projects'
-import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Form from '../components/Form'
 
 function Home() {
     return (
         <div>
-        <Nav />
-        <Header />
-        <About />
-        <Services />
-       
-        <Projects />
-        <Contact />
-        <Footer />
+            <Nav />
+            <Header />
+            <About />
+            <Services />
+            <Projects />
+            <Form/>
+            <Footer />
         </div>
     )
 }

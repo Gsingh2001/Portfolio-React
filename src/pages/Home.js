@@ -6,6 +6,7 @@ import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
+import Works from '../components/Works'
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <About />
             <Services />
             <Projects />
+            <Works />          
             <Form/>
             <Footer />
         </div>

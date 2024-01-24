@@ -8,6 +8,7 @@ import Netflix from './components/project/Netflix';
 import Resume from './components/project/Resume';
 import Todo from './components/project/Todo';
 
+
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} >
           <Route path="/home" element={<Home />} />
         </Route>
+    
         
         <Route path="/project" element={<Project />}>
           <Route path="organify" element={<Organify />} />

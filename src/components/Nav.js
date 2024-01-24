@@ -29,8 +29,9 @@ function Nav() {
                             <a className="nav-link page-scroll" href="#contact">Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link page-scroll" href="/Project">Projects</a>
+                            <a className="nav-link " href="/Project">Projects</a>
                         </li>
+                       
                     </ul>
 
                     <span className="nav-item social-icons">
